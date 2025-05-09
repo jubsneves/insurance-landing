@@ -1,0 +1,63 @@
+@import url(variables.css);
+@import url(shared.css);
+
+/* hero section */
+.hero {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to top, rgba(126, 57, 175, 0.8), rgba(84, 0, 220, 0.4), transparent), url(/assets/img-hero.jpg) center/cover no-repeat;
+    position: relative;
+    background-color: linear-gradient(135deg, rgba(126, 57, 175, 0.5), rgba(84, 0, 220, 0.5));
+}
+
+.hero__section {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.hero__title {
+    font-size: var(--font-size-2xl);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-xs);
+}
+/* /hero section */
+
+/* Features */
+.brand__name {
+    color: var(--primary-color);
+}
+
+.key-features__list {
+    padding: var(--spacing-xs);
+    margin: var(--spacing-xs);
+    list-style: none;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: var(--spacing-xs);
+}
+
+.key-feature__image {
+    width: 100%;
+}
+
+.key-feature__title {
+    color: var(--secondary-color);
+    font-size: var(--font-size-m);
+    margin-bottom: var(--spacing-2xs);
+}
+
+.key-feature__description {
+    color: var(--secondary-text-color);
+    font-weight: 300;
+    font-size: var(--font-size-body);
+    margin: var(--spacing-2xs) var(--spacing-none);
+}
+
+

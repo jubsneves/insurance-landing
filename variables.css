@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #5D26CA;
+    --secondary-color: #7E39AF;
+    --primary-color-light: #D5C0FF;
+    --primary-bg-light: #F2F6FE;
+    --primary-color-dark: #25222E;
+    --primary-text-color: #25222E;
+    --secondary-text-color: #4B4B4B;
+    --tertiary-text-color: #9E9BA5;
+    --border-color: #605974;
+    --color-white: #ffffff;
+
+    --primary-gradient: linear-gradient(135deg, #7E39AF, #5400DC);
+    --primary-gradient-hover: linear-gradient(135deg, #6C00B9, #2A007E);
+
+    --spacing-none: 0px;
+    --spacing-2xs: 6px;
+    --spacing-xs: 10px;
+    --spacing-s: 20px;
+    --spacing-m: 40px;
+    --spacing-l: 60px;
+
+
+    --border-radius-none: 0px;    
+    --border-radius-s: 4px;    
+    --border-radius-m: 8px;    
+    --border-radius-l: 12px;    
+    --border-none: 0px;
+    --border-s: 1px;
+    --border-m: 2px;
+    --border-l: 3px;
+
+    --font-size-2xl: 32px;           /* 40px */
+    --font-size-xl: 26px;            /* 40px */
+    --font-size-l: 22px;             /* 40px */
+    --font-size-m: 18px;             /* 40px */
+    --font-size-body: 14px;          /* 40px */
+    --font-size-description: 12px;   /* 40px */
+    --font-size-small: 10px;         /* 40px */
+
+    --font-size-2xl: 2.5rem;             /* 40px */
+    --font-size-xl: 2.25rem;             /* 36px */
+    --font-size-l: 2rem;                 /* 32px */
+    --font-size-m: 1.5rem;               /* 24px */
+    --font-size-body: 1rem;              /* 16px */
+    --font-size-description: 0.875rem;   /* 14px */
+    --font-size-small: 10px;             /* 12px */
+
+    --font-size-h1: 2.5rem;   /* 40px */
+    --font-size-h2: 2rem;     /* 32px */
+    --font-size-h3: 1.5rem;   /* 24px */
+    --font-size-body: 1rem;   /* 16px */
+    --font-size-small: 0.875rem; /* 14px */
+}
