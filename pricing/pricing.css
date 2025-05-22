@@ -101,6 +101,12 @@
     top: 0;
     right: 0;
 }
+
+.plan__button {
+    margin-bottom: var(--spacing-s);
+    width: 80%;
+}
+
 /* /cards plan */
 
 

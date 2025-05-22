@@ -19,8 +19,23 @@
 </head>
 
 <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h1 class="modal__title title">Do you want to continue?</h1>
+        <div class="modal__actions">
+            <a href="signup-form.html" class="modal__action primary-button button">Yes</a>
+            <button class="modal__action modal__action--negative button" type="button">No</button>
+        </div>
+    </div>
     <header class="main-header">
         <div>
+            <button class="toggle-button">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.00001 36C7.43334 36 6.95867 35.808 6.57601 35.424C6.19334 35.04 6.00134 34.5653 6.00001 34C5.99867 33.4347 6.19067 32.96 6.57601 32.576C6.96134 32.192 7.43601 32 8.00001 32H40C40.5667 32 41.042 32.192 41.426 32.576C41.81 32.96 42.0013 33.4347 42 34C41.9987 34.5653 41.8067 35.0407 41.424 35.426C41.0413 35.8113 40.5667 36.0027 40 36H8.00001ZM8.00001 26C7.43334 26 6.95867 25.808 6.57601 25.424C6.19334 25.04 6.00134 24.5653 6.00001 24C5.99867 23.4347 6.19067 22.96 6.57601 22.576C6.96134 22.192 7.43601 22 8.00001 22H40C40.5667 22 41.042 22.192 41.426 22.576C41.81 22.96 42.0013 23.4347 42 24C41.9987 24.5653 41.8067 25.0407 41.424 25.426C41.0413 25.8113 40.5667 26.0027 40 26H8.00001ZM8.00001 16C7.43334 16 6.95867 15.808 6.57601 15.424C6.19334 15.04 6.00134 14.5653 6.00001 14C5.99867 13.4347 6.19067 12.96 6.57601 12.576C6.96134 12.192 7.43601 12 8.00001 12H40C40.5667 12 41.042 12.192 41.426 12.576C41.81 12.96 42.0013 13.4347 42 14C41.9987 14.5653 41.8067 15.0407 41.424 15.426C41.0413 15.8113 40.5667 16.0027 40 16H8.00001Z"
+                        fill="#25222E" />
+                </svg>
+            </button>
             <a href="index.html" class="main-header__brand">
                 <img src="/assets/logo.png" alt="VioletCare logo">
             </a>
@@ -28,17 +43,31 @@
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
-                    <a href="/pricing/index.html">Pricing</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#services">Services</a>
+                    <a href="/pricing/index.html">Pricing</a>
                 </li>
                 <li class="main-nav__item main-nav__item--cta">
-                    <a href="get-started/index.html">Get Started</a>
+                    <a href="signup-form/index.html" class="button primary-button">Get Started</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./pricing/index.html">Pricing</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="signup-form.html">Get Started</a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
         <section class="hero">
@@ -47,73 +76,7 @@
                 <a href="signup-form/index.html" class="button primary-button">Get started now</a>
             </div>
         </section>
-        <!-- <section>
-            <div class="container">
-                <h1 class="section-title">Our Pricing Plan</h1>
-                <article class="plan">
-                    <h1 class="plan__title">Violet Basic</h1>
-                    <h2 class="plan__price">
-                        <span class="plan__price--amount">€29</span>
-                        <span class="plan__price--period">/month</span>
-                    </h2>
-                    <hr class="divider">
-                    <ul class="plan__features">
-                        <li class="plan__feature">Coverage up to <strong>€50,000</strong>/year</li>
-                        <li class="plan__feature">Emergency & outpatient care</li>
-                        <li class="plan__feature">Digital insurance card</li>
-                        <li class="plan__feature"><strong>2x telemedicine</strong> consultations</li>
-                    </ul>
-                    <a class="button primary-button">Get plan</a>
-                </article>
-                <article class="plan plan--highlighted">
-                    <h1 class="plan__title">Violet Family</h1>
-                    <h3 class="plan__badge">Recommended</h3>
-                    <h2 class="plan__price">
-                        <span class="plan__price--amount">€79</span>
-                        <span class="plan__price--period">/month</span>
-                    </h2>
-                    <hr class="divider">
-                    <ul class="plan__features">
-                        <li class="plan__feature">Coverage up to <strong>€200,000</strong>/year</li>
-                        <li class="plan__feature">Up to <strong>4 members</strong> included</li>
-                        <li class="plan__feature">Dental & vision benefits</li>
-                        <li class="plan__feature"><strong>5x telemedicine</strong> consultations</li>
-                    </ul>
-                    <a class="button primary-button">Get plan</a>
-                </article>
-                <article class="plan">
-                    <h1 class="plan__title">Violet Premium</h1>
-                    <h2 class="plan__price">
-                        <span class="plan__price--amount">€139</span>
-                        <span class="plan__price--period">/month</span>
-                    </h2>
-                    <hr class="divider">
-                    <ul class="plan__features">
-                        <li class="plan__feature">Coverage up to <strong>€500,000</strong>/year</li>
-                        <li class="plan__feature"><strong>Global coverage</strong></li>
-                        <li class="plan__feature">Private hospital access</li>
-                        <li class="plan__feature"><strong>Unlimited telemedicine</strong></li>
-                    </ul>
-                    <a class="button ">Get plan</a>
-                    </article>
-                    <article class="plan plan--highlighted">
-                        <h1 class="plan__title">Violet Family</h1>
-                        <h3 class="plan__badge">Recommended</h3>
-                        <h2 class="plan__price">
-                            <span class="plan__price--amount">€79</span>
-                            <span class="plan__price--period">/month</span>
-                        </h2>
-                        <hr class="divider">
-                        <ul class="plan__features">
-                            <li class="plan__feature">Coverage up to <strong>€200,000</strong>/year</li>
-                            <li class="plan__feature">Up to <strong>4 members</strong> included</li>
-                            <li class="plan__feature">Dental & vision benefits</li>
-                            <li class="plan__feature"><strong>5x telemedicine</strong> consultations</li>
-                        </ul>
-                        <a class="button ">Get plan</a>
-                </article>
-            </div>
-        </section> -->
+        </section>
         <section id="key-features">
             <div class="container">
                 <h1 class="section-title">
@@ -156,6 +119,7 @@
             </div>
         </section>
     </main>
+    <script src="shared.js"></script>
 </body>
 
 </html>
