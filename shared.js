@@ -26,12 +26,17 @@ for (var i = 0; i < getStarted.length; i++) {
 // });
 
 backdrop.addEventListener('click', closeModal);
-noButton.addEventListener('click', closeModal);
+
+// if (noButton){
+    noButton.addEventListener('click', closeModal);
+// }
 
 function closeModal(event) {
     event.preventDefault();
     backdrop.classList.remove('open');
-    modal.classList.remove('open');
+    // if (modal) {
+        modal.classList.remove('open');
+    // }
     mobileNav.classList.remove('open');
 }
 

@@ -160,11 +160,9 @@ body {
 .open {
     display: block !important; 
 }
-
 /* /Button */
 
 /* Typography */
-
 .section-title {
     font-size: var(--font-size-xl);
     text-align: center;
@@ -181,4 +179,50 @@ body {
     font-weight: 400;
     margin: var(--spacing-none);
 }
+/* Typography */
 
+/* modal */
+
+.backdrop {
+    position: fixed;
+    display: none;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--overlay);
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 3;
+    background: var(--color-white);
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    padding: var(--spacing-s);
+    border-radius: var(--border-radius-m);
+}
+
+.modal__title {
+    text-align: center;
+    font-size: var(--font-size-m);
+    margin-bottom: var(--spacing-s);
+}
+
+.modal__actions {
+    text-align: center;
+}
+
+.modal__action {
+    text-decoration: none;
+    font: inherit;
+}
+
+.modal__action:first-of-type {
+    margin-right: var(--spacing-xs);
+}
+
+/* / modal */
