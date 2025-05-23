@@ -7,19 +7,16 @@
 
 /* cards plan */
 
-#plans > .container {
+#plans>.container {
     background: var(--primary-bg-light);
     text-align: center;
     padding-top: 80px;
 }
 
 .plan {
-    width: 30%;
     text-align: center;
-    padding: var(--spacing-xs);
-    margin: var(--spacing-xs);
-    display: inline-block;
-    vertical-align: middle;
+    padding: var(--spacing-xs) var(--spacing-m);
+    margin: var(--spacing-xs) var(--spacing-xs) var(--spacing-m) var(--spacing-xs);
     border-radius: var(--border-radius-l);
     background: var(--color-white);
     cursor: auto;
@@ -75,13 +72,14 @@
     font-weight: 300;
 }
 
-.plan__feature > strong {
+.plan__feature>strong {
     font-weight: 500;
 }
 
 .card--highlighted {
     background: var(--primary-color-dark);
     color: var(--color-white);
+    padding-top: var(--spacing-s);
 }
 
 .card--highlighted strong {
@@ -93,13 +91,14 @@
     background: var(--primary-color-light);
     color: var(--primary-color);
     font-weight: 500;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-description);
     padding: var(--spacing-2xs) var(--spacing-xs);
-    border-radius: var(--border-radius-none) var(--border-radius-m) var(--border-radius-none) var(--border-radius-m);
+    border-radius: var(--border-radius-m) var(--border-radius-m) var(--border-radius-none) var(--border-radius-none);
     margin: var(--spacing-none);
     position: absolute;
     top: 0;
     right: 0;
+    left: 0;
 }
 
 .plan__button {
@@ -112,8 +111,7 @@
 
 /* Compare options */
 .plan-details {
-    padding: var(--spacing-m);
-    margin: auto;
+    padding: var(--spacing-s);
 }
 
 .plan-details:nth-of-type(2) {
@@ -125,15 +123,14 @@
 .plan-details__content {
     display: inline-block;
     vertical-align: middle;
-    width: 40%;
+    width: 100%;
     color: var(--color-white);
 }
 
 .plan-details__image-container {
     display: inline-block;
-    width: 50%;
-    background-size: cover;
-    margin-right: var(--spacing-m);
+    width: 100%;
+    margin-bottom: var(--spacing-s);
 }
 
 .plan-details__image-container:nth-of-type(2) {
@@ -159,10 +156,12 @@
 
 .plan-details__subtitle--highlighted {
     color: var(--color-white);
+    text-align: center;
 }
 
 .plan-details__subtitle {
     color: var(--primary-text-color);
+    text-align: center;
 }
 
 .plan-details__features {
@@ -171,7 +170,7 @@
     margin: var(--spacing-s) var(--spacing-none);
 }
 
-.card--highlighted  {
+.card--highlighted {
     background: var(--primary-color-dark);
 }
 
@@ -186,3 +185,77 @@
 }
 
 /* /Compare options */
+
+/* desktop: 48rem = 768px (1rem = 16px) */
+@media (min-width:48rem) {
+    .plan {
+        display: inline-block;
+        width: 30%;
+        margin: var(--spacing-xs);
+        vertical-align: middle;
+        border-radius: var(--border-radius-m);
+    }
+
+    .plan-details {
+        padding: var(--spacing-m);
+        margin: auto;
+    }
+
+    .plan-details__image-container {
+        display: inline-block;
+        width: 50%;
+        background-size: cover;
+        margin-right: var(--spacing-m);
+    }
+
+    .plan-details__content {
+        display: inline-block;
+        vertical-align: middle;
+        width: 40%;
+        color: var(--color-white);
+    }
+
+    .plan-details__subtitle {
+        text-align: left;
+    }
+
+    .plan-details__subtitle--highlighted {
+        text-align: left;
+    }
+}
+
+/* desktop: 64rem = 1024px (1rem = 16px) */
+@media (min-width:64rem) {
+    .plan {
+        display: inline-block;
+        width: 30%;
+        margin: var(--spacing-xs);
+        vertical-align: middle;
+    }
+
+    .plan-details__image-container {
+        display: inline-block;
+        width: 50%;
+        background-size: cover;
+        margin-right: var(--spacing-m);
+    }
+
+    .plan-details {
+        padding: var(--spacing-m);
+        margin: auto;
+    }
+
+    .plan-details__content {
+        display: inline-block;
+        vertical-align: middle;
+        width: 40%;
+        color: var(--color-white);
+    }
+
+    .plan-details__subtitle {
+        text-align: left;
+    }
+        .plan-details__subtitle--highlighted {
+        text-align: left;
+    }
+}

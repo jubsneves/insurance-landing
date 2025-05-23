@@ -23,7 +23,7 @@
     <div class="modal">
         <h1 class="modal__title title">Do you want to continue?</h1>
         <div class="modal__actions">
-            <a href="/signup-form/index.html" class="modal__action primary-button button">Yes</a>
+            <a href="signup-form.html" class="modal__action primary-button button">Yes</a>
             <button class="modal__action modal__action--negative button" type="button">No</button>
         </div>
     </div>
@@ -46,7 +46,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="pricing/index.html">Pricing</a>
+                    <a href="/pricing/index.html">Pricing</a>
                 </li>
                 <li class="main-nav__item main-nav__item--cta">
                     <a href="signup-form/index.html" class="button primary-button">Get Started</a>
@@ -59,68 +59,43 @@
     <nav class="mobile-nav">
         <ul class="mobile-nav__items">
             <li class="mobile-nav__item">
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
             </li>
             <li class="mobile-nav__item">
-                <a href="pricing/index.html">Pricing</a>
+                <a href="../pricing/index.html">Pricing</a>
             </li>
             <li class="mobile-nav__item mobile-nav__item--cta">
-                <a href="../signup-form/index.html">Get Started</a>
+                <a href="index.html">Get Started</a>
             </li>
         </ul>
     </nav>
     <!-- /Mobile Nav -->
 
-    <main>
-        <section class="hero">
-            <div class="hero__section">
-                <h1 class="hero__title">Protect what matters most</h1>
-                <a href="signup-form/index.html" class="button primary-button">Get started now</a>
-            </div>
-        </section>
-        <section id="key-features">
-            <div>
-                <h1 class="section-title">
-                    Why choose <strong class="brand__name">VioletCare</strong>?
-                </h1>
-                <ul class="key-features__list">
-                    <li class="key-feature">
-                        <div class="key-feature__header">
-                            <img src="assets/reason1.png" class="key-feature__image" alt="">
-                        </div>
-                        <h3 class="key-feature__title">
-                            Instant Digital Health Access
-                        </h3>
-                        <p class="key-feature__description">
-                            Get immediate access to doctors, prescriptions, and medical records.
-                        </p>
-                    </li>
-                    <li class="key-feature">
-                        <div class="key-feature__header">
-                            <img src="assets/reason2.png" class="key-feature__image" alt="">
-                        </div>
-                        <h3 class="key-feature__title">
-                            Transparent & Fair Pricing
-                        </h3>
-                        <p class="key-feature__description">
-                            No hidden fees or surprise bills. Know exactly what you’re paying for every step of the way.
-                    </li>
-                    <li class="key-feature">
-                        <div class="key-feature__header">
-                            <img src="assets/reason3.png" class="key-feature__image" alt="">
-                        </div>
-                        <h3 class="key-feature__title">
-                            Tailored Plans for Every Life Stage
-                        </h3>
-                        <p class="key-feature__description">
-                            Whether you're a student, parent, or retiree—VioletCare adapts to your health needs.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <main class="signup-page">
+        <h1 class="signup-title">
+            Awesome! Let's dive right in
+        </h1>
+        <form action="index.html" class="signup-form">
+            <label for="title">Title</label>
+            <select name="title" id="title">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label for="first-namme">First Name</label>
+            <input type="text" id="first-name">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <input type="checkbox" name="agree-terms" id="agree-terms">
+            <label for="agree-terms">
+                <a href="#">Agree to Terms &amp; Conditions</a>
+            </label>
+            <button type="submit" class="button primary-button">Sign Up</button>
+        </form>
     </main>
-    <script src="shared.js"></script>
 </body>
 
 </html>

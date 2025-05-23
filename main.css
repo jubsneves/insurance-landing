@@ -7,7 +7,6 @@
     height: 600px;
     background: linear-gradient(to top, rgba(126, 57, 175, 0.8), rgba(84, 0, 220, 0.4), transparent), url(/assets/img-hero.jpg) center/cover no-repeat;
     position: relative;
-    background-color: linear-gradient(135deg, rgba(126, 57, 175, 0.5), rgba(84, 0, 220, 0.5));
 }
 
 .hero__section {
@@ -18,10 +17,11 @@
 }
 
 .hero__title {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
     color: var(--color-white);
-    margin-bottom: var(--spacing-xs);
+    margin: var(--spacing-xs) var(--spacing-m);
 }
+
 /* /hero section */
 
 /* Features */
@@ -29,18 +29,23 @@
     color: var(--primary-color);
 }
 
-.key-features__list {
-    padding: var(--spacing-xs);
-    margin: var(--spacing-xs);
-    list-style: none;
-    text-align: center;
+.key-feature {
+    width: 100%;
+    margin: var(--spacing-s) auto;
 }
 
-.key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    margin: var(--spacing-xs);
+.key-feature:nth-child(1),
+.key-feature:nth-child(2) {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-m);
+}
+
+
+.key-features__list {
+    list-style: none;
+    text-align: center;
+    padding: var(--spacing-xs) auto;
+    margin: var(--spacing-s);
 }
 
 .key-feature__image {
@@ -50,7 +55,7 @@
 .key-feature__title {
     color: var(--secondary-color);
     font-size: var(--font-size-m);
-    margin-bottom: var(--spacing-2xs);
+    margin: var(--spacing-2xs) var(--spacing-none);
 }
 
 .key-feature__description {
@@ -60,4 +65,57 @@
     margin: var(--spacing-2xs) var(--spacing-none);
 }
 
+/* tablet: 48rem = 768px (1rem = 16px) */
+@media (min-width: 48rem) {
+    .key-feature {
+        width: 80%;
+    }
 
+    .key-feature__image {
+        width: 60%;
+    }
+
+    .key-feature__title {
+        font-size: var(--font-size-m);
+    }
+}
+
+/* desktop: 64rem = 1024px (1rem = 16px) */
+@media (min-width: 64rem) {
+    .hero__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+        margin-right: var(--spacing-m);
+        vertical-align: top;
+    }
+
+    .key-feature:last-child {
+        margin-right: var(--spacing-none);
+    }
+
+    .key-feature__title {
+        font-size: var(--font-size-m);
+    }
+
+    .key-feature__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .key-feature:nth-child(1),
+    .key-feature:nth-child(2) {
+        border-bottom: none;
+        padding-bottom: var(--spacing-none);
+    }
+    .key-feature__description {
+        font-size: var(--font-size-s);
+    }
+
+    .key-feature__image {
+        width: 100%;
+    }
+}
