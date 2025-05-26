@@ -155,9 +155,16 @@ body {
     font-size: var(--font-size-body);
 }
 
-.primary-button:hover,
-.primary-button:active {
+.primary-button:not([disabled]):hover,
+.primary-button:not([disabled]):active {
     background: var(--primary-gradient);
+    color: var(--color-white);
+}
+
+.button[disabled] {
+    background-color: var(--disabled-bg);
+    color: var(--disabled-text);
+    cursor: not-allowed;
 }
 
 .open {
