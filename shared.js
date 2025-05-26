@@ -9,8 +9,7 @@ var mobileNav = document.querySelector('.mobile-nav');
 // console.dir(getStarted);
 
 for (var i = 0; i < getStarted.length; i++) {
-    getStarted[i].addEventListener('click', function(event){
-        event.preventDefault();
+    getStarted[i].addEventListener('click', function(){
         backdrop.classList.add('open');
         modal.classList.add('open');
     });
@@ -31,8 +30,7 @@ backdrop.addEventListener('click', closeModal);
     noButton.addEventListener('click', closeModal);
 // }
 
-function closeModal(event) {
-    event.preventDefault();
+function closeModal() {
     backdrop.classList.remove('open');
     // if (modal) {
         modal.classList.remove('open');

@@ -1,5 +1,4 @@
 @import url(variables.css);
-@import url(shared.css);
 
 * {
     box-sizing: content-box;
@@ -23,6 +22,7 @@ body {
     padding: var(--spacing-xs);
     box-sizing: border-box;
     text-align: center;
+    top: 0;
 }
 
 .main-header>div {
