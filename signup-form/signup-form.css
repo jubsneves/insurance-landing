@@ -69,7 +69,13 @@ body {
 
 .form-group input[type="checkbox"]:checked {
     background-color: var(--primary-color);
+}
 
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group :invalid {
+    border:  1px solid var(--error-border) !important;
+    background-color: var(--error-bg);
 }
 
 .form-input:hover,
