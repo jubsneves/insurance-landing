@@ -29,32 +29,23 @@
     color: var(--primary-color);
 }
 
-.key-feature {
-    width: 100%;
-    margin: var(--spacing-s) auto;
-}
-
-.key-feature:nth-child(1),
-.key-feature:nth-child(2) {
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: var(--spacing-m);
-}
-
-
 .key-features__list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: var(--spacing-xs) auto;
-    margin: var(--spacing-s);
+    justify-content: center;
+    padding: var(--spacing-none) var(--spacing-m);
 }
 
 .key-feature__image {
-    width: 100%;
+    max-width: 60%;
 }
 
 .key-feature__title {
     color: var(--secondary-color);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
     margin: var(--spacing-2xs) var(--spacing-none);
 }
 
@@ -65,57 +56,55 @@
     margin: var(--spacing-2xs) var(--spacing-none);
 }
 
+hr {
+    border: 0.5px solid var(--tertiary-text-color);
+    width: 100%;
+}
+
 /* tablet: 48rem = 768px (1rem = 16px) */
 @media (min-width: 48rem) {
-    .key-feature {
-        width: 80%;
-    }
-
-    .key-feature__image {
-        width: 60%;
-    }
-
     .key-feature__title {
         font-size: var(--font-size-m);
+    }
+
+    hr {
+        max-width: 80%;
     }
 }
 
 /* desktop: 64rem = 1024px (1rem = 16px) */
 @media (min-width: 64rem) {
     .hero__title {
-        font-size: var(--font-size-2xl);
-    }
-
-    .key-feature {
-        display: inline-block;
-        width: 30%;
-        margin-right: var(--spacing-m);
-        vertical-align: top;
-    }
-
-    .key-feature:last-child {
-        margin-right: var(--spacing-none);
-    }
-
-    .key-feature__title {
-        font-size: var(--font-size-m);
+        font-size: var(--font-size-xl);
     }
 
     .key-feature__list {
-        margin: 0;
-        padding: 0;
+        display: flex;
+        flex-direction: row;
     }
 
-    .key-feature:nth-child(1),
-    .key-feature:nth-child(2) {
-        border-bottom: none;
-        padding-bottom: var(--spacing-none);
+    .key-feature {
+        display: flex;
+        flex-direction: column;
     }
-    .key-feature__description {
+
+    .key-feature__title {
         font-size: var(--font-size-s);
     }
 
-    .key-feature__image {
-        width: 100%;
+    .key-features__list {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .key-feature__description {
+        font-size: var(--font-size-xs);
+    }
+
+    hr {
+        display: none;
     }
 }
